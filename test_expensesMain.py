@@ -29,14 +29,14 @@ class TestTrip (unittest.TestCase):
 
     def test_readInputs_1(self):
         print('Testing readInputs ...')
-        trainDetails = readInputs( os.getcwd() + sep + 'test3.txt')
+        trainDetails = readInputs( os.getcwd() + sep + 'test1.txt')
         self.assertEqual( trainDetails()[1][0], 'MOVE_IN')
         self.assertEqual( trainDetails()[0][0], 'MOVE_IN')
         self.assertEqual( trainDetails()[0][1], 'ANDY')
         self.assertEqual( trainDetails()[1][1], 'WOODY')
 
     def test_expenses_1(self):
-        listOfTests = ['test3.txt']
+        listOfTests = ['test5.txt']
         result = expenses(listOfTests=listOfTests).do()
         self.assertEqual( result, None)
 

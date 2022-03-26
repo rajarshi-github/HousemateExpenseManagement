@@ -1,0 +1,2 @@
+class NotEnoughHouseMates(Exception):
+    pass

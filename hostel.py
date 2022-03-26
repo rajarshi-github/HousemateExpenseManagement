@@ -41,8 +41,6 @@ class Hostel():
                 return 'FAILURE'
             else:
                 Hostel.memberList.pop(idxMember)
-                #for idx, member in enumerate(Hostel.memberList):
-                #    del Hostel.memberList[idx].dues[memberName]
                 return 'SUCCESS'
         
 
